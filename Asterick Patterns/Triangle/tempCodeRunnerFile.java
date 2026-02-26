@@ -1,0 +1,2 @@
+drawVertical(n);
+        drawInverted(n);
