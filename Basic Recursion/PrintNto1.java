@@ -5,6 +5,7 @@ public class PrintNto1 {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter value of n: ");
         int n=sc.nextInt();
+        sc.close();
         // print(n);
         printByBackTrack(1, n);
     }

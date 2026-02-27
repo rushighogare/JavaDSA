@@ -5,6 +5,7 @@ public class Print1ToN {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter value of n: ");
         int n=sc.nextInt();
+        sc.close();
         print(n);
     }
 

@@ -12,6 +12,7 @@ public class RecursiveBubbleSort {
             arr[i]=Integer.parseInt(sc.next());
         }
 
+        sc.close();
         recursiveBubbleSort(arr, size);
 
         System.out.println("Sorted array is: ");

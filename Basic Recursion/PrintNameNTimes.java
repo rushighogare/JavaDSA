@@ -5,6 +5,7 @@ public class PrintNameNTimes {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter value of n: ");
         int n=sc.nextInt();
+        sc.close();
         printName(n);
     } 
     
