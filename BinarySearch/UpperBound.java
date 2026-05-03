@@ -21,7 +21,7 @@ public class UpperBound {
         }
 
         int ans=solveByBinarySearch(target, arr);
-        System.out.println("Upper Bound for given target is: "+ans);
+        System.out.println("Upper Bound for given target is at index: "+ans);
     }
 
     public static int solveByBinarySearch(int target, int arr[]){

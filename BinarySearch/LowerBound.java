@@ -26,7 +26,7 @@ public class LowerBound {
         int ans=solveByBinarySearch(target, arr);    //optimal
 
 
-        System.out.println("Lower bound for given array is: "+ans);
+        System.out.println("Lower bound for given target is at index: "+ans);
     }
 
     public static int solveByLinear(int target, int arr[]){
