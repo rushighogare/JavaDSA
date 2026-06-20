@@ -30,17 +30,17 @@ public class Deletion {
         System.out.println("Linked list after deletion of head: ");
         printLL(head2);
 
-        Node head3=deleteTail(head);
+        Node head3=deleteTail(head2);
         System.out.println("Linked list after deletion of tail: ");
         printLL(head3);
 
         int k=3;
-        Node head4=deleteKthNode(head, k);
+        Node head4=deleteKthNode(head3, k);
         System.out.println("Linked list after deletion of Kth node: ");
         printLL(head4);
 
-        int value=4;
-        Node head5=deleteNodeByValue(head, value);
+        int value=5;
+        Node head5=deleteNodeByValue(head4, value);
         System.out.println("Linked list after deletion of node by value: ");
         printLL(head5);
     }
@@ -71,7 +71,11 @@ public class Deletion {
 
     public static Node deleteHead(Node head){
         if(head==null) return null;
-        return head.next;
+
+        Node temp=head;
+        head=head.next;
+        temp.next=null;
+        return head;
     }
 
     private static Node deleteTail(Node head){
